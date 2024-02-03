@@ -1,0 +1,74 @@
+.item-box {
+  background: rgba(28, 28, 28, 0.65);
+  color: white;
+  text-align: center;
+  border: 1px solid #555;
+  padding: 20px;
+  /* width: 350px; */
+  font-family: sans-serif;
+  margin: 20px;
+  width: 100%;
+  break-inside: avoid-column;
+}
+
+.column-display {
+  margin-top: 20px;
+  column-count: 5;
+  column-gap: 20px;
+}
+
+.center-image {
+  display: flex;
+
+  justify-content: center;
+}
+
+h2 {
+  color: white;
+  margin: 10px;
+}
+
+.main-image {
+  width: 56px;
+  height: auto;
+}
+
+.attribute-name {
+  color: white !important;
+}
+
+.attribute-value {
+
+  color: #84b7ff;
+}
+
+.item-title {
+  color: #ecd2a8 !important;
+  filter: brightness(115%);
+  /* color: gold; /* Gold color for the item title */
+  font-size: 24px;
+  /* Larger font size for the title */
+  margin-bottom: 10px;
+}
+
+.item-attributes {
+  /* background: #333; /* Slightly lighter background for attributes */
+  padding: 10px;
+  margin-bottom: 10px;
+  /* Space between sections */
+}
+
+.variable-background {
+  background: url(./images/ui/tt_tl_tiny_i_m_bb.png) top left no-repeat, url(./images/ui/tt_tr_tiny_i_m_bb.png) top right no-repeat, url(./images/ui/tt_bl_tiny_i_m_bb.png) bottom left no-repeat, url(./images/ui/tt_br_tiny_i_m_bb.png) bottom right no-repeat, url(./images/ui/tt_border_t_tiny_i.png) top repeat-x, url(./images/ui/tt_border_b_tiny_i.png) bottom repeat-x, url(./images/ui/tt_border_l_tiny_i.png) left repeat-y, url(./images/ui/tt_border_r_tiny_i.png) right repeat-y, url(./images/ui/bgtile_b.png) repeat;
+  /* Bright green color for attribute values */
+}
+
+.variable-font {
+  color: #7fff00;
+  filter: hue-rotate(80deg);
+  font-size: 1em;
+  position: relative;
+  /* top: 0px; */
+  margin: 2px;
+  padding: 2px;
+}

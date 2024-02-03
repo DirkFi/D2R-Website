@@ -1,0 +1,41 @@
+h2,
+p {
+  color: white;
+  text-indent: 40px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 2fr);
+  /* Creates 10 columns */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  margin-bottom: 150px;
+}
+
+.rune {
+  flex: 0 0 calc(10% - 1.5em);
+  /* Adjust the width of each div */
+  margin: 0.75em;
+  width: 300px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.glass-container {
+  display: block;
+  max-width: 45vw;
+  margin-top: 4vh;
+  margin-left: 5vh;
+  margin-bottom: 30px;
+  background: rgba(0, 0, 0, 0.56);
+  padding-top: 35px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.6px);
+  -webkit-backdrop-filter: blur(11.6px);
+  justify-content: center;
+}
