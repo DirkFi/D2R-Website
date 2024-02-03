@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Exocet Blizzard';
+  src: url('fonts/ExocetBlizzardMixedCaps-Medium.woff2') format('woff2'),
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  margin-top: 200px;
+}
+
+/* .table-container { */
+/*   display: flex; */
+/*   flex-direction: column; */
+/*   justify-content: center; */
+/*   align-items: center; */
+/*   height: calc(100vh - 100px); */
+/*   margin-top: 60px; */
+/* } */
+
+.Header {
+  color: rgba(112, 104, 80, 1);
+}
+
+.rune {
+  margin: 1px;
+  width: 40px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.img-container img {
+  width: 100%;
+  display: block;
+}
+
+table {
+  /* width: 80%; */
+  font-family: 'Exocet Blizzard', Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-collapse: collapse;
+}
+
+table .Title {
+  font-size: 1.4rem;
+}
+
+table th:first-child,
+table td:first-child {
+  width: 250px;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+  width: 200px;
+}
+
+table th:nth-child(3),
+table td:nth-child(3) {
+  width: 300px;
+}
+
+table th:nth-child(4),
+table td:nth-child(4) {
+  width: 250px;
+}
+
+table th:nth-child(5),
+table td:nth-child(5) {
+  width: 190px;
+}
+
+button {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  border-color: #496297;
+  background-color: #496297;
+}
+
+th,
+td {
+  border: 2px solid rgba(112, 104, 80, 1);
+  padding: 8px;
+  text-align: center;
+}
+
+h2,
+.name {
+  color: white;
+}
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-card {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  opacity: 0.95;
+  transform: translate(-50%, 0);
+  background-color: #fff;
+  z-index: 10000;
+  display: none;
+  width: 200px;
+  /* or whatever width you want */
+}
+
+.image-container:hover .hover-card {
+  display: block;
+}
+
+.styled-box {
+  font-family: 'Exocet Blizzard', sans-serif;
+  z-index: 10000;
+  background-color: #000000;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.styled-box .title {
+  font-size: 24px;
+  margin-bottom: 2px;
+  color: rgba(144, 136, 88, 1);
+  /* color: #FFD700; */
+  /* Gold color for the title */
+}
+
+
+.styled-box .base {
+  color: rgba(111, 113, 112, 1);
+  margin-bottom: 1px;
+}
+
+.styled-box .usedrunes {
+  color: rgba(144, 136, 88, 1);
+}
+
+.styled-box .attribute {
+  margin: 5px 0;
+}
+
+.styled-box .important {
+  color: #FF0000;
+  /* Red text for important attributes */
+}
+
+.styled-box .enhanced {
+  color: rgba(66, 91, 213, 1);
+}

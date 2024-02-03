@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  cursor: url('./images/d2R-cursor-32-26.cur'), default;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Exocet Blizzard';
+  src: url('fonts/ExocetBlizzardMixedCaps-Medium.woff2') format('woff2'),
+    /* Add more formats as necessary */
+}
+
+/* Add basic styling to the navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: #3d3d45;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+/* Style the navbar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Exocet Blizzard', Helvetica, sans-serif;
+}
+
+/* Style the logo */
+.navbar-logo {
+  height: 60px;
+  /* Adjust the size as needed */
+  margin-right: 5px;
+}
+
+/* Style the bottom navbar */
+.bottom-navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+/* Remove default styles from links */
+.bottom-navbar a {
+  height: 150px;
+  padding: 20px 0;
+  z-index: 10;
+}
+
+.navbar-image {
+  height: 180px;
+  width: auto;
+}
+
+.home-link {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.custom-cursor {
+  cursor: url('./images/d2R-cursor-32-26.cur'), default;
+
+  margin-bottom: 180px;
+}
+
+body {
+  padding-top: 60px;
+  background: url('images/background.jpg');
+}
+
+/* Position the right link to the end */
+.right-link {
+  margin-left: auto;
+}
