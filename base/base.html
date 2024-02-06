@@ -3,12 +3,31 @@
 
 <head>
   <title>My D2R Items</title>
-  <script src="function.js"></script>
+  <!-- <script src="function.js"></script> -->
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="./base_style.css">
+  <script>
+    function showNotification() {
+      var modal = document.getElementById("notificationModal");
+      modal.style.display = "block";
+
+      var span = document.getElementsByClassName("close-btn")[0];
+
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    }
+  </script>
 </head>
 
-<body class="custom-cursor">
 
+<body class="custom-cursor">
   <div class="navbar">
     <a href="../index.html" class="home-link">
       <img
@@ -22,13 +41,26 @@
     <a href="base.html">Base</a>
   </div>
 
-  <h2>I m bases!</h2>
   <div class="bottom-navbar">
     <img src="../images/health_ball.png" alt="Left Image" class="navbar-image">
     <img src="../images/mana_ball.png" alt="Right Image" class="navbar-image">
 
   </div>
-  <h1>欢迎来到没有知识的荒原。</h1>
+  <div class="glass-container">
+    <h1>欢迎来到没有知识的荒原。</h1>
+    <div class="opacity-container"></div>
+
+    <img src="./images/payman.jpg" alt="PeiNan Image" class="Peinan">
+    <br>
+    <br>
+    <div id="notificationModal" class="modal" style="display:none;">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <p>2024 IEM TIME OLIVEIRA!</p>
+      </div>
+    </div>
+    <button onclick="showNotification()">牛牛哥加油</button>
+  </div>
 </body>
 
 

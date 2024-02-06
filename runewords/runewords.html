@@ -26,6 +26,37 @@
     <a href="../base/base.html">Base</a>
   </div>
 
+  <div id="notificationModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <div class="modal-top-bar">
+
+        <img src="./images/rowside.png" Image Description" style="height: 50px;">
+        <!-- <span class="modal-title">Modal Title</span> -->
+        <span class="close-btn">&times;</span>
+      </div>
+
+      <p>Your modal content here...</p>
+
+      <div class="modal-bottom-bar">
+        <img src="./images/rowsided.png" Image Description" style="height: 50px;">
+      </div>
+    </div>
+  </div>
+
+  <div id="notificationModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <p>2024 IEM TIME OLIVEIRA!</p>
+    </div>
+  </div>
+
+  <div id="notificationModal1" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <p>2024 IEM TIME OLIVEIRA!</p>
+    </div>
+  </div>
+
   <div class="table-container">
     <table>
       <tr>
@@ -88,7 +119,7 @@
           </i>
         </td>
 
-        <td><button onclick="window.location.href='../runes/runes.html';">Dusk Shroud</button></td>
+        <td><button onclick="showNotification('notificationModal1', 1)">Dusk Shroud</button></td>
       </tr>
       <tr>
         <td class="name">Call To Arms<br>
@@ -149,7 +180,7 @@
           <i class='bx bxs-star-half bx-md' style="color: rgba(112, 104, 80, 1);"></i>
         </td>
 
-        <td><button onclick="window.location.href='../runes/runes.html';">Crystal Sword</button></td>
+        <td><button onclick="showNotification('notificationModal', 0)">Crystal Sword</button></td>
       </tr>
 
       <tr>
