@@ -59,6 +59,19 @@
   pointer-events: none;
 }
 
+audio {
+  pointer-events: all;
+}
+
+
+.center-music p {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
 /* Remove default styles from links */
 .bottom-navbar a {
   height: 150px;
