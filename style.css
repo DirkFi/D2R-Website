@@ -105,3 +105,64 @@ body {
 .right-link {
   margin-left: auto;
 }
+
+
+/* Same as before, with additional styles for the close button */
+.scrolling-text-container {
+  overflow: hidden;
+  /* Ensure the overflow text is hidden */
+  position: relative;
+  /* Establish a positioning context */
+  height: 100px;
+  /* Set a fixed height for the container */
+  width: 200px;
+  /* Set a fixed width for the container, or as needed */
+  border: 1px solid #000;
+  /* Just to show the container's boundaries */
+  box-sizing: border-box;
+  /* Other styles remain unchanged */
+  position: fixed;
+  /* Fix the container on the screen */
+  z-index: 10;
+  /* Ensure it's above other content */
+  left: 50%;
+  top: 50%;
+  transform: translate(-20%, -50%);
+  /* Center the box on the screen */
+}
+
+.scrolling-text {
+  position: absolute;
+  bottom: 0;
+  /* Start the animation from the bottom */
+  width: 100%;
+  /* Ensure the text spans the full width of the container */
+  color: white;
+  animation: scroll-text 10s linear infinite;
+}
+
+@keyframes scroll-text {
+  0% {
+    bottom: -100%;
+  }
+
+  /* Start below the visible area */
+  100% {
+    bottom: 100%;
+  }
+
+  /* End above the visible area */
+}
+
+/* Style for the close button */
+#close-text-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #000;
+  /* Or any color that matches your design */
+}
