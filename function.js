@@ -1,23 +1,37 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var openButton = document.getElementById('trigger-image');
-  var closeButton = document.getElementById('close-text-box');
-  var textBox = document.getElementById('scrolling-text-box');
+  var triggerImages = document.querySelectorAll('.trigger-image');
+  var textBoxes = document.querySelectorAll('.scrolling-text-container');
+  var closeButtons = document.querySelectorAll('.close-text-box');
+  triggerImages.forEach(function(img, index) {
+    img.addEventListener('click', function() {
+      // Close all text boxes before opening the new one
+      textBoxes.forEach(function(box) {
+        box.style.display = 'none';
+      });
 
-  openButton.onclick = function() {
-    var imgRect = openButton.getBoundingClientRect();
-    textBox.style.display = 'block';
-    textBox.style.top = (imgRect.bottom + window.scrollY + 10) + 'px'; // 10 pixels below the image
-    textBox.style.left = (imgRect.left + window.scrollX) + 'px'; // Aligned with the left side of the image
-  };
+      // Calculate the position where the text box should appear
+      var imgRect = img.getBoundingClientRect();
+      var correspondingBox = document.getElementById('scrolling-text-box-' + (index + 1));
+      correspondingBox.style.display = 'block';
+      correspondingBox.style.position = 'absolute';
+      correspondingBox.style.top = (imgRect.top + window.scrollY - 15) + 'px'; // Position it 10px below the image
+      correspondingBox.style.left = imgRect.left + 'px'; // Align it with the left of the image
+    });
+  });
 
-  closeButton.onclick = function() {
-    textBox.style.display = 'none';
-  };
+  closeButtons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      // Close the text box this button belongs to
+      this.parentElement.style.display = 'none';
+    });
+  });
 
-  // Close the text box when clicking anywhere outside of it
-  window.onclick = function(event) {
-    if (event.target !== textBox && event.target !== openButton && !textBox.contains(event.target)) {
-      textBox.style.display = 'none';
-    }
-  };
+  window.addEventListener('click', function(event) {
+    textBoxes.forEach(function(box) {
+      // Check if the click is outside of the text box and not on the image
+      if (event.target !== box && !box.contains(event.target) && !event.target.matches('.trigger-image')) {
+        box.style.display = 'none';
+      }
+    });
+  });
 });

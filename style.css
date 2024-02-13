@@ -41,7 +41,6 @@
 /* Style the logo */
 .navbar-logo {
   height: 60px;
-  /* Adjust the size as needed */
   margin-right: 5px;
 }
 
@@ -92,7 +91,6 @@ audio {
 
 .custom-cursor {
   cursor: url('./images/d2R-cursor-32-26.cur'), default;
-
   margin-bottom: 180px;
 }
 
@@ -110,25 +108,16 @@ body {
 /* Same as before, with additional styles for the close button */
 .scrolling-text-container {
   overflow: hidden;
-  /* Ensure the overflow text is hidden */
   position: relative;
-  /* Establish a positioning context */
-  height: 100px;
-  /* Set a fixed height for the container */
-  width: 200px;
-  /* Set a fixed width for the container, or as needed */
+  height: 200px;
+  width: 300px;
   border: 1px solid #000;
-  /* Just to show the container's boundaries */
   box-sizing: border-box;
-  /* Other styles remain unchanged */
   position: fixed;
-  /* Fix the container on the screen */
   z-index: 10;
-  /* Ensure it's above other content */
   left: 50%;
   top: 50%;
   transform: translate(-20%, -50%);
-  /* Center the box on the screen */
 }
 
 .scrolling-text {
@@ -155,14 +144,33 @@ body {
 }
 
 /* Style for the close button */
-#close-text-box {
+.close-text-box {
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  background: black;
+  border-radius: 10px;
   position: absolute;
   top: 0;
   right: 0;
-  border: none;
-  background: none;
   cursor: pointer;
   font-size: 20px;
-  color: #000;
-  /* Or any color that matches your design */
+  color: white;
+}
+
+#cain {
+  position: absolute;
+  top: 30%;
+  left: 80%;
+}
+
+#asheara {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+#tyreal {
+  position: absolute;
+  top: 40%;
+  left: 40%;
 }

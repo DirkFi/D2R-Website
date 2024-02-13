@@ -25,16 +25,42 @@
     <a href="./base/base.html">Base</a>
   </div>
 
+  <!-- Image 1 to open the text box -->
+  <img src="./images/npc/cain.png" id="cain" alt="Open Scrolling Text 1" class="trigger-image" style="cursor: pointer;">
 
-  <!-- Clickable image to open the text box -->
-  <img src="./images/health_ball.png" id="trigger-image" alt="Open Scrolling Text" id="open-text-box"
-    style="cursor: pointer; opacity: 0.1;">
-
-  <div class="scrolling-text-container" id="scrolling-text-box" style="display: block;">
-    <div class="scrolling-text">Here is some scrolling text...<br>And here it goes again!<br>And again...</div>
-    <button id="close-text-box">&times; Close</button>
+  <!-- Text box 1 with scrolling text -->
+  <div class="scrolling-text-container" id="scrolling-text-box-1" style="display: none;">
+    <div class="scrolling-text">整个开发过程可以说极度依赖ChatGPT,GPT对于前端的问题掌握很深。
+      只要把基础逻辑阐述清楚，再加上人为一定的修改，一定能达到可靠的结果。整个过程学到的还是之前
+      的display:none与display:block。这是一种不占用空间的存储div内容的方式，在需要显示的时候调出来即可。
+    </div>
+    <button class="close-text-box">&times; Close</button>
   </div>
 
+  <!-- Image 2 to open the text box -->
+  <img src="./images/npc/asheara.png" id="asheara" alt="Open Scrolling Text 2" class="trigger-image"
+    style="cursor: pointer;">
+
+  <!-- Text box 2 with scrolling text -->
+  <div class="scrolling-text-container" id="scrolling-text-box-2" style="display: none;">
+    <div class="scrolling-text">整体风格的构想，刚开始的几个网页还是照葫芦画瓢。后来我决定借鉴游戏中的一些经典ui
+      作为网页的一部分。比如hover能显示很帅的装备信息，以及button点击显示页面，这些基本都用一个block就可以搞定。
+      再有就是本页面的点击出现滚动聊天框。</div>
+    <button class="close-text-box">&times; Close</button>
+  </div>
+
+
+  <!-- Image 3 to open the text box -->
+  <img src="./images/npc/tyreal.png" id="tyreal" alt="Open Scrolling Text 3" class="trigger-image"
+    style="cursor: pointer;">
+
+  <!-- Text box 3 with scrolling text -->
+  <div class="scrolling-text-container" id="scrolling-text-box-3" style="display: none;">
+    <div class="scrolling-text">暗黑2玩着玩着心血来潮搭一个网页记录自己打到的所有牛逼的东西。<br>暗黑2后期玩法
+      相比暗黑4真是多了不少，多了奶牛关和boss关，并且几乎每一种角色的build都有自己适合的场所。再加上交易机制
+      ，大家可以轻松地打到或者换取到自己所需要的装备。</div>
+    <button class="close-text-box">&times; Close</button>
+  </div>
   <div class="bottom-navbar">
 
     <img src="./images/health_ball.png" alt="Left Image" class="navbar-image">
