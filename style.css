@@ -130,25 +130,24 @@ body {
   animation: scroll-text 10s linear infinite;
 }
 
+
 @keyframes scroll-text {
-  0% {
-    bottom: -100%;
+  from {
+    transform: translateY(80%);
   }
 
-  /* Start below the visible area */
-  100% {
-    bottom: 100%;
+  to {
+    transform: translateY(-100%);
   }
-
-  /* End above the visible area */
 }
+
 
 /* Style for the close button */
 .close-text-box {
   box-sizing: border-box;
   border: 1px solid #fff;
   background: black;
-  border-radius: 10px;
+  border-radius: 2px;
   position: absolute;
   top: 0;
   right: 0;
